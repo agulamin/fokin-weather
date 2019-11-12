@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     backgroundColor: "blue"
   },
   pinkView: {
-    flex: 4,
+    flex: 1,
     backgroundColor: "pink"
   }
 });

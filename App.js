@@ -6,6 +6,7 @@ export default function App() {
     <View style={styles.container}>
       <View style={styles.yellowView} />
       <View style={styles.blueView} />
+      <View style={styles.pinkView} />
     </View>
   );
 }
@@ -21,5 +22,9 @@ const styles = StyleSheet.create({
   blueView: {
     flex: 4,
     backgroundColor: "blue"
+  },
+  pinkView: {
+    flex: 4,
+    backgroundColor: "pink"
   }
 });

@@ -3,7 +3,7 @@ import { Alert } from "react-native";
 import Loading from "./Loading";
 import * as Location from "expo-location";
 import axios from "axios";
-
+//import axios from "axios" // npm install axios -g 
 const API_KEY = "38b70137b6894817ace922aefacf4089";
 export default class extends React.Component {
   state ={

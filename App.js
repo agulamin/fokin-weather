@@ -4,6 +4,7 @@ import Loading from "./Loading";
 import * as Location from "expo-location";
 import axios from "axios";
 import Weather from "./Weather"
+import { LOADIPHLPAPI } from "dns";
 
 //import axios from "axios" // npm install axios -g 
 const API_KEY = "38b70137b6894817ace922aefacf4089";
@@ -48,7 +49,13 @@ export default class extends React.Component {
   }
   render(){
     // return <Loading />
-    const { isLoading, temp } = this.state;
-    return isLoading ? <Loading /> : <Weather temp={Math.round(temp)} />;
+    // const { isLoading, temp } = this.state;
+    // return isLoading ? <Loading /> : <Weather temp={Math.round(temp)} />;
+    const { isLoading, temp, condition } = this.state;
+    return isLoading ? (
+      <Loding />
+    ) : (
+      <Weather temp={Math.round(temp)} condition={condition} />
+    );
   }
 }

@@ -26,7 +26,7 @@ export default class extends React.Component {
     console.log(data);
     // this.setState({ isLoading: false, temp: data.main.temp })
     this.setState({
-      isLoading: false;
+      isLoading: false,
       condition: weather[0].main,
       temp
     });
